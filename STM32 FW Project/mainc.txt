@@ -1,5 +1,5 @@
 Man.c 
-155s–Ú‚É‘}“ü
+155è¡Œç›®ã«æŒ¿å…¥
  
  uint32_t cnt_usr_1 = 0;
  
@@ -20,11 +20,11 @@ Man.c
   (int)(pid.x_s1 * 57.29578F), (int)(pid.y_s1 * 57.29578F), (int)(pid.z_s1 * 57.29578F));
  
  
-432s–ÚˆÈ‰º‚ğƒRƒƒ“ƒgƒAƒEƒg
+432è¡Œç›®ä»¥ä¸‹ã‚’ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆ
 	// PRINTF("%d\t%d\t%d\t%d\t%f\t%f\t%f\t%f\t%f\n", gELE, gAIL, gRUD, gTHR, motor_pwm.motor1_pwm, euler_ahrs.thx * 57.3, euler_ahrs.thy * 57.3, euler_rc.thx * 57.3, euler_rc.thy * 57.3);
  
   
-903s–Ú‚É‘}“ü
+903è¡Œç›®ã«æŒ¿å…¥
    ++cnt_usr_1; /* 800Hz */
 
  
