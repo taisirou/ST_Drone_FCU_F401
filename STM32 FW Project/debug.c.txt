@@ -1,13 +1,13 @@
 debug.c
 
-14s–Ú‚É’Ç‰Á
+14è¡Œç›®ã«è¿½åŠ 
 	static char temp[255];
 	
-26s–Ú‚ğƒRƒƒ“ƒgƒAƒEƒg
+26è¡Œç›®ã‚’ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆ
 	//    HAL_UART_Transmit(&huart1, (uint8_t *)str, len, 1000);
 	
-27s–Ú‚É‘}“ü
-UART‘—M‚ğ’Ç‰Á
+27è¡Œç›®ã«æŒ¿å…¥
+UARTé€ä¿¡ã‚’è¿½åŠ 
 
 	HAL_UART_Transmit_IT(&huart1, (uint8_t *)str, len);
 
