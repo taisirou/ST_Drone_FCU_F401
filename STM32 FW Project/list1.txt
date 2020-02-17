@@ -1,0 +1,30 @@
+Man.c 
+155行目に挿入
+ 
+ uint32_t cnt_usr_1 = 0;
+ 
+
+ if ((count1 % 2) == 0)
+ PRINTF("%d %d %d %d %d %d %d %d %d\n",
+  (int)(cnt_usr_1 / 10),
+  (int)(acc_fil_int.AXIS_Z / 10), 
+  (int)(gyro_fil_int.AXIS_X / 1000), (int)(gyro_fil_int.AXIS_Y / 1000), (int)(gyro_fil_int.AXIS_Z / 1000),
+  ((int)motor_pwm.motor1_pwm) / 2, ((int)motor_pwm.motor2_pwm) / 2, ((int)motor_pwm.motor3_pwm) / 2, ((int)motor_pwm.motor4_pwm) / 2);
+ 
+ 
+ if ((count1 % 2) == 0) 
+  PRINTF("%d %d %d %d %d %d %d %d\n",
+  (int)(cnt_usr_1 / 10),
+  (int)(acc_fil_int.AXIS_Z / 10),
+  (int)(gyro_fil_int.AXIS_X / 1000), (int)(gyro_fil_int.AXIS_Y / 1000), (int)(gyro_fil_int.AXIS_Z / 1000),
+  (int)(pid.x_s1 * 57.29578F), (int)(pid.y_s1 * 57.29578F), (int)(pid.z_s1 * 57.29578F));
+ 
+ 
+432行目以下をコメントアウト
+	// PRINTF("%d\t%d\t%d\t%d\t%f\t%f\t%f\t%f\t%f\n", gELE, gAIL, gRUD, gTHR, motor_pwm.motor1_pwm, euler_ahrs.thx * 57.3, euler_ahrs.thy * 57.3, euler_rc.thx * 57.3, euler_rc.thy * 57.3);
+ 
+  
+903行目に挿入
+   ++cnt_usr_1; /* 800Hz */
+
+ 

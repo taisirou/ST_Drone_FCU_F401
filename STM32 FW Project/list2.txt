@@ -1,0 +1,16 @@
+debug.c
+
+14行目に追加
+	static char temp[255];
+	
+26行目をコメントアウト
+	//    HAL_UART_Transmit(&huart1, (uint8_t *)str, len, 1000);
+	
+27行目に挿入
+UART送信を追加
+
+	HAL_UART_Transmit_IT(&huart1, (uint8_t *)str, len);
+
+
+
+list2
